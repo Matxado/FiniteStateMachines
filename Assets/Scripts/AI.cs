@@ -13,7 +13,6 @@ public class AI : MonoBehaviour
 
     void Start() 
     {
-
         agent = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
         currentState = new Idle(gameObject, agent, anim, player);
@@ -22,7 +21,6 @@ public class AI : MonoBehaviour
 
     void Update() 
     {
-
         currentState = currentState.Process();
     }
 }
